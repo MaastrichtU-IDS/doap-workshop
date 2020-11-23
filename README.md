@@ -53,22 +53,19 @@ The list of descriptors will be available through the web, and added to the proj
   ] .
 ```
 
-It was decided that DOAP file would be populated via website. Nonetheless, we acknowledge that the descriptors needed are already available from sources such GitHub. Some of these data sources provides access to their data via API and will take into consideration to harvest this data via python script. Click here to know more about the [descriptors](docs/Descriptors DOAP.md).
+It was decided that DOAP file would be populated via website. Nonetheless, we acknowledge that the descriptors needed are already available from sources such GitHub. Some of these data sources provides access to their data via API and will take into consideration to harvest this data via python script. Click here to know more about the [descriptors](docs/DescriptorsDOAP.md).
 
 
-### Create a DOAP description for your project
-
-You can easily generate the DOAP description for your project on this [website](https://maastrichtu-ids.github.io/projects/create-doap).
 
 ---
 
 ###  👨‍💻 APPLY YOUR KNOWLEDGE  - Create a DOAP for your project. 
 
-Please let us know which project will you choose for this tasks according with the following scenarios:
+Please let us know which project will you select for this activity. As previously mentioned, you can select a IDS project from the iDS-Maastricht or your personal account. The following scenarios shall clarify the next steps:
 
 #### Scenario 1: Select from your personal Github/Gitlab repository
 
-Click on [Create an issue](https://github.com/MaastrichtU-IDS/projects/issues) and add your project link.
+Please, [create an issue](https://github.com/MaastrichtU-IDS/projects/issues) and add your project link.
 
 #### Scenario 2: Select from IDS Github repository
 
@@ -82,11 +79,15 @@ Go to this website and complete the https://maastrichtu-ids.github.io/projects/c
 
 #### Task 2: Add more DOAP project properties [5 min]
 
-Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project (e.g. increase citeability of your software project by adding DOI properties). Add your ideas here.
+Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project. 
+
+ Add your ideas 💡 here.
+
+> 💡 e.g. increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
 
 #### Task 3: Git push-origin master [5 min]
 
-Add your `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
+Add your 📥  `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
 
 #### Task 4: Visualise the IDS Project directory and use SPARQL query
 
@@ -136,7 +137,7 @@ select distinct * where {
 }
 ```
 
-**Question 1**: Can you please do filter the dataset to all projects that use Python programming language?
+**Question 1** 🏆: Can you please do filter the dataset to all projects that use Python programming language?
 
 Query the ids-project with the following SPARQL:
 
@@ -149,7 +150,7 @@ select ?category (count(?project) as ?projectCount) where {
 } GROUP BY ?category`
 ```
 
-**Question 2**: Can you please do query and count the project statuses in ids-projects dataset?
+**Question 2** 🏆: Can you please do query and count the project statuses in ids-projects dataset?
 
 
 
