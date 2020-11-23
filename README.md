@@ -11,6 +11,12 @@ You will know the answers to questions like:
 
 
 
+### Motivation: lack of semantic interoperability
+
+The lack of well-defined indexing practices is a common problem in most institutional repositories. Researchers will typically assign keywords to their projects, however, these terms are not extracted from a controlled vocabulary or thesaurus. This leads to ambiguity and lack of standardization in terms which are used to describe the content of their projects.
+
+This workshop introduces the ontology used to describe a project. Once the project descriptors are assigned to the existing projects, it is feasible to use the DOAP ontology to expand queries and to assist end-users in the selection of search terms.
+
 ### What is DOAP (ontology)?
 
 **[DOAP](https://github.com/ewilderj/doap/wiki)** (an acronym of **Description of a Project**) is a machine-readable ontology describing projects, in particular free and open source software projects. DOAP is a descriptive vocabulary expressed using Resource Description Framework (RDF) and the Web Ontology Language (OWL). Computers may use these DOAP profiles to find, for instance, all projects that use python as programming language, or to list all projects from a developer that you know. This is accomplished by explicitly defining the project properties.
