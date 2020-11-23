@@ -60,7 +60,7 @@ It was decided that DOAP file would be populated via website. Nonetheless, we ac
 
 ---
 
-###  👨‍💻 APPLY YOUR KNOWLEDGE  - Create a DOAP for your project. 
+###  👨‍💻 APPLY YOUR KNOWLEDGE
 
 Please let us know which project will you select for this activity. As previously mentioned, you can select a IDS project from the iDS-Maastricht or your personal account. The following scenarios shall clarify the next steps:
 
@@ -78,6 +78,8 @@ Find [here](https://docs.google.com/spreadsheets/d/1gmpoXs7qEMGOx6IBJifsYNqPVeLj
 
 Go to this website and complete the https://maastrichtu-ids.github.io/projects/create-doap.
 
+---
+
 #### Task 2: Add more DOAP project properties [5 min]
 
 Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project. 
@@ -86,19 +88,23 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
 > 💡 e.g. increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
 
+---
+
 #### Task 3: Git push-origin master [5 min]
 
 Add your 📥  `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
 
 >  ⚠️ ***Your project will be automatically be added to the website tomorrow*** ⚠️
 
+---
+
 #### Task 4: Visualise the IDS Project directory and use SPARQL query [5 min]
 
-- Go to graphdb and select [ids-projects repository](https://graphdb.dumontierlab.com/) (top right) then,
-- go to SPARQL (right tab) and add the following SPARQL:
+- **Step 1**: Go to graphdb and select [ids-projects repository](https://graphdb.dumontierlab.com/) (top right) then,
+- **Step 2**: Go to SPARQL (right tab) and add the following SPARQL:
 
 ```SPARQL
-// GET ALL IDS PROJECTS FROM IDS DASHBOARD
+# GET ALL IDS PROJECTS FROM IDS DASHBOARD
 PREFIX doap: <http://usefulinc.com/ns/doap#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
@@ -140,14 +146,14 @@ select distinct * where {
 }
 ```
 
-**Question 1** 🏆: **<u>Can you please create a SPARQL query that filter all IDS projects that have utilized Python programming language?</u>**
+**Question 1** 🏆: **<u>Can you please create a SPARQL query that filter all IDS projects within the ids-projects dataset that have utilized Python programming language?</u>**
 
 [Solution ✔️](solution/sol1.md)
 
-Query the ids-project with the following SPARQL:
+* **Step 3**: Add another query to ids-project with the following SPARQL:
 
 ```SPARQL
-// COUNT THE IDS PROJECTS PER CATEGORY
+# COUNT THE IDS PROJECTS PER CATEGORY
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 select ?category (count(?project) as ?projectCount) where { 
     ?project a doap:Project ;
@@ -155,7 +161,7 @@ select ?category (count(?project) as ?projectCount) where {
 } GROUP BY ?category`
 ```
 
-**Question 2** 🏆: **<u>Can you please create a SPARQL query that counts the project statuses in ids-projects dataset?</u>**
+**Question 2** 🏆: **<u>Can you please create a SPARQL query that counts the project statuses in the ids-projects dataset?</u>**
 
 [Solution ✔️](solution/sol2)
 
