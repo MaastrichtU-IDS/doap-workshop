@@ -1,24 +1,25 @@
 # FAIR project descriptions: creating a description of a (Github) software project
 
-This document is an instruction to the **DOAP** at the Institute of Data Science (**IDS**). It describes what they need to do in order to help make our IDS Dashboard an attractive website.
+This short online workshop provides an introduction to Description of a Project ([DOAP](https://github.com/ewilderj/doap/wiki)), an ontology used to describe software projects. 
 
----
+You will know the answers to questions like:
+
+- what is DOAP? 
+- Why is this important? 
+- How do you create a DOAP for your project? 
+- How do you query project descriptors using GraphDB?
+
+
+
+### What is DOAP (ontology)?
+
+**[DOAP](https://github.com/ewilderj/doap/wiki)** (an acronym of **Description of a Project**) is a machine-readable ontology describing projects, in particular free and open source software projects. DOAP is a descriptive vocabulary expressed using Resource Description Framework (RDF) and the Web Ontology Language (OWL). Computers may use these DOAP profiles to find, for instance, all projects that use python as programming language, or to list all projects from a developer that you know. This is accomplished by explicitly defining the project properties.
 
 ### Why did we adopt the Description of a Project (DOAP) ontology?
 
 Ontologies are now widely used by people - and organizations - to describe their projects using Semantic Web standards. Yet, since files are spread around the Web, there is no easy and standardized way to find a project regarding its metadata. Back to 2015, a consensus for adopting a proper [Software Ontology](http://theswo.sourceforge.net/) was taken that describes and categorizes a software project based on a list of classifiers (or descriptors) by using as much standardized language as possible. To this end, we have decided to adopt and implement project descriptors and properties from the machine-readable ontology called DOAP.
 
 Thus, the idea of IDS Dashboard is help users you find specific projects that meet their interests and to gain a broader understanding of the wide variety of work currently underway in the IDS. This way, users just need to publish some DOAP files on their websites to benefit of this distributed architecture.
-
-### General DOAP Guidelines
-
-This section of the website contains advice and guidelines for projects when creating or maintaining their DOAP files. While much of the information contained is general to all DOAP files, some is specific to the files maintained by IDS projects.
-
-### What is DOAP (ontology)
-
-**[DOAP](https://github.com/ewilderj/doap/wiki)** (an acronym of **Description of a Project**) is a machine-readable ontology describing projects, in particular free and open source software projects. DOAP is a descriptive vocabulary expressed using Resource Description Framework (RDF) and the Web Ontology Language (OWL). Computers may use these DOAP profiles to find, for instance, all projects that use python as programming language, or to list all projects from a developer that you know. This is accomplished by explicitly defining the project properties.
-
-
 
 ### How does a DOAP file look like?
 
@@ -65,7 +66,7 @@ Please let us know which project will you select for this activity. As previousl
 
 #### Scenario 1: Select from your personal Github/Gitlab repository
 
-Please, [create an issue](https://github.com/MaastrichtU-IDS/projects/issues) and add your project link.
+Please, [create an issue](https://github.com/MaastrichtU-IDS/projects/issues/2) and add your project link.
 
 #### Scenario 2: Select from IDS Github repository
 
@@ -81,7 +82,7 @@ Go to this website and complete the https://maastrichtu-ids.github.io/projects/c
 
 Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project. 
 
- Add your ideas 💡 here.
+ Add your ideas 💡 [here](http://localhost:9001/p/doap-workshop).
 
 > 💡 e.g. increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
 
@@ -89,10 +90,12 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
 Add your 📥  `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
 
-#### Task 4: Visualise the IDS Project directory and use SPARQL query
+>  ⚠️ ***Your project will be automatically be added to the website tomorrow*** ⚠️
+
+#### Task 4: Visualise the IDS Project directory and use SPARQL query [5 min]
 
 - Go to graphdb and select [ids-projects repository](https://graphdb.dumontierlab.com/) (top right) then,
-- go to SPARQL (right tab) and add the followitng SPARQL:
+- go to SPARQL (right tab) and add the following SPARQL:
 
 ```SPARQL
 // GET ALL IDS PROJECTS FROM IDS DASHBOARD
@@ -137,7 +140,9 @@ select distinct * where {
 }
 ```
 
-**Question 1** 🏆: Can you please do filter the dataset to all projects that use Python programming language?
+**Question 1** 🏆: **<u>Can you please create a SPARQL query that filter all IDS projects that have utilized Python programming language?</u>**
+
+[Solution ✔️](solution/sol1.md)
 
 Query the ids-project with the following SPARQL:
 
@@ -150,8 +155,8 @@ select ?category (count(?project) as ?projectCount) where {
 } GROUP BY ?category`
 ```
 
-**Question 2** 🏆: Can you please do query and count the project statuses in ids-projects dataset?
+**Question 2** 🏆: **<u>Can you please create a SPARQL query that counts the project statuses in ids-projects dataset?</u>**
 
+[Solution ✔️](solution/sol2)
 
-
-#### Task 5: Give us your feedback!
+#### Task 5: Give us your [feedback](https://cutrillaguerrero.typeform.com/to/GJ7o2jYd)! 🟥🟩 (30 sec)
