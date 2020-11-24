@@ -1,6 +1,12 @@
 # FAIR project descriptions: creating a description of a (Github) software project
 
-This short online workshop provides an introduction to Description of a Project ([DOAP](https://github.com/ewilderj/doap/wiki)), an ontology used to describe software projects. 
+
+
+### Introduction: lack of semantic interoperability
+
+The lack of well-defined indexing practices is a common problem in most institutional repositories. Researchers will typically assign keywords to their projects, however, these terms are not extracted from a controlled vocabulary or thesaurus. This leads to ambiguity and lack of standardization in terms which are used to describe the content of their projects. As solution to the problem, IDS has undertaken the effort to design a search engine that provides a single entry to our research projects. The result is the I[DS Dashboard](https://maastrichtu-ids.github.io/best-practices/docs/create-doap), particularly aimed at making our software findable, accessible, interoperable and reusable (FAIR), an essential component to reducing barriers for access. In addition to facilitating access to projects, IDS Dashboard reconciles and indexes projects using metadata descriptors that come directly from the Github repository using a machine-readable ontology.
+
+This workshop introduces the ontology used to describe a project. Once the project descriptors are assigned to the existing projects, it is feasible to use the Description of a Project ([DOAP](https://github.com/ewilderj/doap/wiki)) ontology to expand queries and to assist end-users in the selection of search terms.
 
 You will know the answers to questions like:
 
@@ -8,14 +14,6 @@ You will know the answers to questions like:
 - Why is this important? 
 - How do you create a DOAP for your project? 
 - How do you query project descriptors using GraphDB?
-
-
-
-### Motivation: lack of semantic interoperability
-
-The lack of well-defined indexing practices is a common problem in most institutional repositories. Researchers will typically assign keywords to their projects, however, these terms are not extracted from a controlled vocabulary or thesaurus. This leads to ambiguity and lack of standardization in terms which are used to describe the content of their projects.
-
-This workshop introduces the ontology used to describe a project. Once the project descriptors are assigned to the existing projects, it is feasible to use the DOAP ontology to expand queries and to assist end-users in the selection of search terms.
 
 ### What is DOAP (ontology)?
 
@@ -40,7 +38,7 @@ The list of descriptors will be available through the web, and added to the proj
 <https://w3id.org/umids/project/fairsharing-metrics>
   a doap:Project ;
   doap:name "Fairsharing Metrics" ;
-  doap:description '''A Dockerization of the Fairsharing metrics as a module for Data Quality Analysis.''' ;
+  doap:description "A Dockerization of the Fairsharing metrics as a module for Data Quality Analysis." ;
   bibo:status "Active" ;
 
   doap:programming-language "Python" ;
@@ -60,9 +58,9 @@ The list of descriptors will be available through the web, and added to the proj
   ] .
 ```
 
-It was decided that DOAP file would be populated via website. Nonetheless, we acknowledge that the descriptors needed are already available from sources such GitHub. Some of these data sources provides access to their data via API and will take into consideration to harvest this data via python script. Click here to know more about the [descriptors](docs/DescriptorsDOAP.md).
+>  Note: We acknowledge that the descriptors needed for the metadata are already available from sources such GitHub. Some of these data sources provides access to their data via API and will take into consideration to harvest this data via python script.
 
-
+Check this [example](docs/DescriptorsDOAP.md) for understanding the descriptors [5 min].
 
 ---
 
@@ -76,7 +74,7 @@ Please, [create an issue](https://github.com/MaastrichtU-IDS/projects/issues/2) 
 
 #### Scenario 2: Select from IDS Github repository
 
-Find [here](https://docs.google.com/spreadsheets/d/1gmpoXs7qEMGOx6IBJifsYNqPVeLjLzwAjTNmay7ymng/edit?usp=sharing) your name and the assigned project to create and upload the DOAP file.
+Find [here](https://docs.google.com/spreadsheets/d/1gmpoXs7qEMGOx6IBJifsYNqPVeLjLzwAjTNmay7ymng/edit?usp=sharing) your name and the assigned IDS project to create and upload the DOAP file.
 
 ---
 
@@ -92,7 +90,7 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
  Add your ideas 💡 [here](http://localhost:9001/p/doap-workshop).
 
-> 💡 e.g. increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
+> 💡 e.g. [...] increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
 
 ---
 
@@ -100,7 +98,7 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
 Add your 📥  `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
 
->  ⚠️ ***Your project will be automatically be added to the website tomorrow*** ⚠️
+>  ⚠️ ***Your project will automatically be added to the website tomorrow*** ⚠️
 
 ---
 
