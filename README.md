@@ -58,7 +58,7 @@ The list of descriptors will be available through the web, and added to the proj
   ] .
 ```
 
->  Note: We acknowledge that the descriptors needed for the metadata are already available from sources such GitHub. Some of these data sources provides access to their data via API and will take into consideration to harvest this data via python script.
+>  Note: We acknowledge that the descriptors needed for the metadata are already available from public sources such [GH Archive](https://www.gharchive.org/). This primary source provides access to their data via API and will take into consideration to harvest this data via python script.
 
 Check this [example](docs/DescriptorsDOAP.md) for understanding the descriptors [5 min].
 
