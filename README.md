@@ -23,7 +23,7 @@ You will know the answers to questions like:
 
 Ontologies are now widely used by people - and organizations - to describe their projects using Semantic Web standards. Yet, since files are spread around the Web, there is no easy and standardized way to find a project regarding its metadata. Back to 2015, a consensus for adopting a proper [Software Ontology](http://theswo.sourceforge.net/) was taken that describes and categorizes a software project based on a list of classifiers (or descriptors) by using as much standardized language as possible. To this end, we have decided to adopt and implement project descriptors and properties from the machine-readable ontology called DOAP.
 
-Thus, the idea of IDS Dashboard is help users you find specific projects that meet their interests and to gain a broader understanding of the wide variety of work currently underway in the IDS. This way, users just need to publish some DOAP files on their websites to benefit of this distributed architecture.
+Thus, the idea of IDS Dashboard is help users to find specific projects that meet their interests and to gain a broader understanding of the wide variety of work currently underway in the IDS. This way, users just need to publish some DOAP files on their websites to benefit of this distributed architecture.
 
 ### How does a DOAP file look like?
 
@@ -66,11 +66,11 @@ Check this [example](docs/DescriptorsDOAP.md) for understanding the descriptors 
 
 ###  👨‍💻 APPLY YOUR KNOWLEDGE
 
-Please let us know which project will you select for this activity. As previously mentioned, you can select a IDS project from the iDS-Maastricht or your personal account. The following scenarios shall clarify the next steps:
+Please let us know which project will you select for this activity. As previously mentioned, you can select an IDS project from the iDS-Maastricht or your personal account. The following scenarios shall clarify the next steps:
 
 **Scenario 1: Select from your personal Github/Gitlab repository**
 
-Add [here](https://github.com/MaastrichtU-IDS/projects/blob/main/EXTERNAL_REPOSITORIES.txt) your user  and project name (e.g. `user-name/project-name`).
+Add [here](https://docs.google.com/document/d/1XwIatooUNE6poEvmtq-DQNhKLmriaXvcS79GzteaGAg/edit?usp=sharing) your Github/Gitlab user and project name (e.g. `user-name/project-name`).
 
 **Scenario 2: Select from IDS Github repository**
 
@@ -88,7 +88,7 @@ Go to IDS Dashboard and complete the [form](https://maastrichtu-ids.github.io/pr
 
 Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project. 
 
- Add your ideas 💡 [here](http://localhost:9001/p/doap-workshop).
+ Add your ideas (minimum 2 per group) 💡 [here](https://docs.google.com/document/d/1D3v4r89pKnx8mIp3rvby_2VO_NooJEckIO2vI1K1dfE/edit?usp=sharing).
 
 > 💡 e.g. [...] increase citability and reproducibility of your software project by adding PID (persistent identifier) for  the research assets. Another one is to add the ORCID of the project owner.
 
@@ -96,7 +96,7 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
 #### Task 3: Git push-origin master [5 min]
 
-Add your 📥  `doap-project.ttl` file in your project folder. If you have selected a IDS project from our repository (Scenario 2), send us the file and we will upload the `.ttl`file.
+Add your 📥  `doap-project.ttl` file in your project folder. If you have selected an IDS project from our repository (Scenario 2), [send us](c.utrillaguerrero@maastrichtuniversity.nl) an email with the file and we will upload the `.ttl`file.
 
 >  ⚠️ ***Your project will automatically be added to the website tomorrow*** ⚠️
 
@@ -150,7 +150,7 @@ select distinct * where {
 }
 ```
 
-**Question 1** 🏆: **<u>Can you please create a SPARQL query that filter all IDS projects within the ids-projects dataset that have utilized Python programming language?</u>**
+**Question 1** 🏆: **<u>Can you please create a SPARQL query that filters all IDS projects (ids-projects dataset) with '*Python*' as a programming language?</u>**
 
 [Solution ✔️](solution/sol1.md)
 
