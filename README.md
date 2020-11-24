@@ -6,7 +6,7 @@
 
 The lack of well-defined indexing practices is a common problem in most institutional repositories. Researchers will typically assign keywords to their projects, however, these terms are not extracted from a controlled vocabulary or thesaurus. This leads to ambiguity and lack of standardization in terms which are used to describe the content of their projects. As solution to the problem, IDS has undertaken the effort to design a search engine that provides a single entry to our research projects. The result is the [IDS Dashboard](https://maastrichtu-ids.github.io/best-practices/docs/create-doap), particularly aimed at making our software findable, accessible, interoperable and reusable (FAIR), an essential component to reducing barriers for access. In addition to facilitating access to projects, IDS Dashboard reconciles and indexes projects using metadata descriptors that come directly from the Github repository using a machine-readable ontology.
 
-This workshop introduces the ontology used to describe a project. Once the project descriptors are assigned to the existing projects, it is feasible to use the Description of a Project ([DOAP](https://github.com/ewilderj/doap/wiki)) ontology to expand queries and to assist end-users in the selection of search terms.
+This workshop introduces the ontology used to describe a project, the Description of a Project ([DOAP](https://github.com/ewilderj/doap/wiki)). Once the project descriptors are assigned to the existing projects, it is feasible to use the DOAP ontology to expand queries and to assist end-users in the selection of search terms.
 
 You will know the answers to questions like:
 
@@ -68,11 +68,11 @@ Check this [example](docs/DescriptorsDOAP.md) for understanding the descriptors 
 
 Please let us know which project will you select for this activity. As previously mentioned, you can select a IDS project from the iDS-Maastricht or your personal account. The following scenarios shall clarify the next steps:
 
-#### Scenario 1: Select from your personal Github/Gitlab repository
+**Scenario 1: Select from your personal Github/Gitlab repository**
 
-Please, [create an issue](https://github.com/MaastrichtU-IDS/projects/issues/2) and add your project link.
+Add [here](https://github.com/MaastrichtU-IDS/projects/blob/main/EXTERNAL_REPOSITORIES.txt) your user  and project name (e.g. `user-name/project-name`).
 
-#### Scenario 2: Select from IDS Github repository
+**Scenario 2: Select from IDS Github repository**
 
 Find [here](https://docs.google.com/spreadsheets/d/1gmpoXs7qEMGOx6IBJifsYNqPVeLjLzwAjTNmay7ymng/edit?usp=sharing) your name and the assigned IDS project to create and upload the DOAP file.
 
@@ -80,7 +80,7 @@ Find [here](https://docs.google.com/spreadsheets/d/1gmpoXs7qEMGOx6IBJifsYNqPVeLj
 
 #### Task 1: Fill in the DOAP form [3 min]
 
-Go to this website and complete the https://maastrichtu-ids.github.io/projects/create-doap.
+Go to IDS Dashboard and complete the [form](https://maastrichtu-ids.github.io/projects/create-doap).
 
 ---
 
