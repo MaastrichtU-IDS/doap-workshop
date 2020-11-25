@@ -86,7 +86,7 @@ Go to IDS Dashboard and complete the [form](https://maastrichtu-ids.github.io/pr
 
 #### Task 2: Add more DOAP project properties [5 min]
 
-Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the fairness of a project. 
+Trade with your group, and discuss extra properties or descriptors you find appropriate to improve the FAIRness of a project. 
 
  Add your ideas (minimum 2 per group) 💡 [here](https://docs.google.com/document/d/1D3v4r89pKnx8mIp3rvby_2VO_NooJEckIO2vI1K1dfE/edit?usp=sharing).
 
