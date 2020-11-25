@@ -1,6 +1,6 @@
 # FAIR project descriptions: creating a description of a (Github) software project
 
-
+<img src="assets/ids_logo.png" style="zoom:73%;" />
 
 ### Introduction: lack of semantic interoperability
 
@@ -96,7 +96,7 @@ Trade with your group, and discuss extra properties or descriptors you find appr
 
 #### Task 3: Git push-origin master [5 min]
 
-Add your 📥  `doap-project.ttl` file in your project folder. If you have selected an IDS project from our repository (Scenario 2), [send us](c.utrillaguerrero@maastrichtuniversity.nl) an email with the file and we will upload the `.ttl`file.
+Add your 📥  `doap-project.ttl` file in your project folder. If you have selected an IDS project from our repository (Scenario 2), [send us](mailito:c.utrillaguerrero@maastrichtuniversity.nl) an email with the file and we will upload the `.ttl`file.
 
 >  ⚠️ ***Your project will automatically be added to the website tomorrow*** ⚠️
 
