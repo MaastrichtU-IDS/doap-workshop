@@ -11,7 +11,7 @@
 * [Slides](https://docs.google.com/presentation/d/17nynZvuTGUGH1-bhOFik7SgjMrv06gQExst0HpYkUOc/edit?usp=sharing) 👨‍💻[20 min]
 * [IDS Dashboard motivation](https://maastrichtu-ids.github.io/best-practices/docs/create-doap) 🔎[5 min read]
 * [IDS Dashboard website](https://maastrichtu-ids.github.io/projects/) 🔭
-* [post-workshop feedback]() 🍎 [TBD]
+* [post-workshop feedback](https://cutrillaguerrero.typeform.com/report/GJ7o2jYd/eLuERbsrIg8b3MJX) 🍎 
 
 ## Introduction: lack of semantic interoperability 
 
